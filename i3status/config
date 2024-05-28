@@ -1,0 +1,31 @@
+general {
+    colors = true
+    interval = 5
+}
+
+order += "time"
+order += "volume master"
+
+disk "/" {
+    format = "Disk: %avail"
+}
+
+load {
+    format = "Load: %1min"
+}
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+
+time {
+    format = "󱑂 %H:%M"
+}
+
+
+volume master {
+    format = "󰕾 %volume"
+    format_muted = "󰖁 Muted"
+    device = "default"
+}
+
